@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505 !important;
+    color: #fff;
+}
+/* SERVICES HERO*/
+.services-hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 25px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("../images/gym-interior.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.services-hero-content {
+    max-width: 750px;
+}
+
+.services-hero-content span {
+    color: #e50914;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.services-hero h1 {
+    color: #fff;
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+.services-hero h1 strong {
+    color: #e50914;
+}
+
+.services-hero p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/*INTRO*/
+.services-intro {
+    background: #0b0b0b;
+    padding: 90px 25px;
+    text-align: center;
+}
+
+.services-intro-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.services-intro-content > span {
+    color: #e50914;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.services-intro h2 {
+    color: #fff;
+    font-size: 43px;
+    line-height: 1.1;
+    margin: 15px 0 20px;
+}
+
+.services-intro h2 strong {
+    color: #e50914;
+    display: block;
+}
+
+.services-intro p {
+    color: #888;
+    line-height: 1.8;
+}
+
+/*SERVICES*/
+.all-services {
+    background: #050505;
+    padding: 30px 25px 100px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-page-card {
+    position: relative;
+    background: #111;
+    border: 1px solid #222;
+    padding: 35px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.service-page-card:hover {
+    transform: translateY(-8px);
+    border-color: #e50914;
+}
+
+.service-number {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #333;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.service-page-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.service-page-card:hover .service-page-icon {
+    background: #e50914;
+    border-color: #e50914;
+}
+
+.service-page-card h3 {
+    color: #fff;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.service-page-card > p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-page-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-page-card ul li {
+    color: #aaa;
+    font-size: 13px;
+    padding: 8px 0;
+    border-top: 1px solid #222;
+}
+
+.service-page-card ul li::before {
+    content: "✓";
+    color: #e50914;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/*PROCESS*/
+.process-section {
+    background: #0b0b0b;
+    padding: 100px 25px;
+}
+
+.process-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.process-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.process-heading span {
+    color: #e50914;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.process-heading h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-top: 12px;
+}
+
+.process-heading h2 strong {
+    color: #e50914;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 20px;
+}
+
+.process-card {
+    position: relative;
+    padding: 30px;
+    border: 1px solid #222;
+    background: #111;
+}
+
+.process-number {
+    color: #e50914;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.process-card h3 {
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.process-card p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/*CTA*/
+.services-cta {
+    background: #e50914;
+    color: #fff;
+    padding: 55px max(25px, calc((100% - 1150px) / 2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.services-cta span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.services-cta h2 {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.services-cta h2 strong {
+    color: #000;
+}
+
+.services-cta a {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.services-cta a:hover {
+    background: #222;
+    transform: translateY(-3px);
+}
+
+/* TABLET */
+@media (max-width: 950px) {
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .services-hero {
+        min-height: 350px;
+    }
+
+    .services-hero h1 {
+        font-size: 45px;
+    }
+
+    .services-hero p {
+        font-size: 15px;
+    }
+
+    .services-intro {
+        padding: 70px 20px;
+    }
+
+    .services-intro h2 {
+        font-size: 34px;
+    }
+
+    .all-services {
+        padding: 20px 20px 70px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-page-card {
+        padding: 30px 25px;
+    }
+
+    .process-section {
+        padding: 70px 20px;
+    }
+
+    .process-heading h2 {
+        font-size: 34px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 45px 25px;
+    }
+
+    .services-cta h2 {
+        font-size: 23px;
+    }
+
+    .services-cta a {
+        width: 100%;
+        text-align: center;
+    }
+}

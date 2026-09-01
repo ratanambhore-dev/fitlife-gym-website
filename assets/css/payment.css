@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505 !important;
+    color: #fff;
+}
+
+/*PAYMENT HERO*/
+.payment-hero {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.75)
+        ),
+        url("../images/gym-interior.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.payment-hero span {
+    color: #e50914;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.payment-hero h1 {
+    color: white;
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.payment-hero h1 strong {
+    color: #e50914;
+}
+
+.payment-hero p {
+    color: #aaa;
+}
+
+/*PAYMENT SECTION*/
+.payment-section {
+    background: #050505;
+    padding: 90px 25px;
+}
+
+.payment-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 30px;
+}
+
+/* PLAN*/
+.selected-plan {
+    background: #111;
+    border: 1px solid #252525;
+    padding: 40px;
+}
+
+.selected-plan > span {
+    color: #e50914;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.selected-plan h2 {
+    color: white;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.payment-price {
+    color: #e50914;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.payment-price small {
+    color: #888;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.plan-features {
+    margin-top: 30px;
+}
+
+.plan-features p {
+    color: #aaa;
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+}
+
+/*FORM*/
+.payment-box {
+    background: #111;
+    border: 1px solid #252525;
+    padding: 40px;
+}
+
+.payment-box h2 {
+    color: white;
+    margin: 0 0 10px;
+}
+
+.payment-box > p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    background: #080808;
+    border: 1px solid #292929;
+    color: white;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #e50914;
+}
+
+.payment-box h3 {
+    color: white;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.payment-methods {
+    display: grid;
+    gap: 10px;
+    margin: 15px 0 25px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid #292929;
+    background: #080808;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.payment-option:hover {
+    border-color: #e50914;
+}
+
+.payment-option input {
+    accent-color: #e50914;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background: #e50914;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pay-button:hover {
+    background: #ff1a25;
+}
+
+.payment-message {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*MOBILE*/
+@media(max-width:700px) {
+    .payment-container {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-hero h1 {
+        font-size: 38px;
+    }
+
+    .selected-plan,
+    .payment-box {
+        padding: 25px;
+    }
+}

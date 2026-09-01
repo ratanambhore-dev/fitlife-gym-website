@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505 !important;
+    color: #fff;
+}
+
+/* GALLERY HERO */
+.gallery-hero{
+    min-height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 25px;
+    background:linear-gradient(#000b,#000b),
+    url("../images/gym-interior.jpg") center/cover;
+}
+
+.gallery-hero-content{max-width:700px}
+.gallery-hero span,.section-heading span,.gallery-cta span{
+    color:#e50914;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+.gallery-hero h1{
+    color:#fff;
+    font-size:60px;
+    margin:15px 0;
+}
+.gallery-hero h1 strong,.section-heading h2 strong{color:#e50914}
+.gallery-hero p,.section-heading p{color:#888;line-height:1.7}
+
+
+/* GALLERY SECTION */
+.gallery-section{
+    background:#080808;
+    padding:90px 25px;
+}
+.gallery-container{
+    max-width:1200px;
+    margin:auto;
+}
+.section-heading{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 40px;
+}
+.section-heading h2{
+    color:#fff;
+    font-size:42px;
+    margin:12px 0;
+}
+
+
+/* FILTER BUTTONS */
+.gallery-filter{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:40px;
+}
+.filter-btn{
+    background:transparent;
+    color:#aaa;
+    border:1px solid #333;
+    padding:11px 25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+.filter-btn:hover,.filter-btn.active{
+    background:#e50914;
+    border-color:#e50914;
+    color:#fff;
+}
+
+
+/* GALLERY GRID */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.gallery-item{
+    height:300px;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    background:#111;
+}
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+.gallery-item:hover img{transform:scale(1.08)}
+
+
+/* IMAGE OVERLAY */
+.gallery-overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:30px 20px 20px;
+    background:linear-gradient(transparent,#000e);
+    opacity:0;
+    transition:.3s;
+}
+.gallery-item:hover .gallery-overlay{
+    opacity:1;
+}
+.gallery-overlay span{
+    color:#e50914;
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.gallery-overlay h3{
+    color:#fff;
+    margin:7px 0 0;
+}
+
+
+/* CTA */
+.gallery-cta{
+    background:#e50914;
+    padding:50px max(25px,calc((100% - 1150px)/2));
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+.gallery-cta h2{
+    color:#fff;
+    font-size:30px;
+    margin:8px 0 0;
+}
+.gallery-cta h2 strong{color:#000}
+.gallery-cta a{
+    background:#000;
+    color:#fff;
+    padding:15px 30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:600px){
+    .gallery-hero h1{font-size:42px}
+    .gallery-grid{grid-template-columns:1fr}
+    .gallery-item{height:300px}
+    .gallery-overlay{opacity:1}
+    .gallery-cta{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .gallery-cta a{
+        width:100%;
+        text-align:center;
+        box-sizing:border-box;
+    }
+}

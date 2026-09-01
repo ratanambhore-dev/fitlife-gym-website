@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505 !important;
+    color: #fff;
+}
+/*TABLET*/
+@media (max-width: 900px) {
+    .gym-slider {
+        height: 650px;
+    }
+    .slide-content h1 {
+        font-size: 50px;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 600px) {
+    .gym-slider {
+        height: calc(100vh - 70px);
+        min-height: 550px;
+    }
+
+    .slide-content {
+        left: 25px;
+        right: 25px;
+        max-width: none;
+    }
+
+    .slide-content span {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .slide-content h1 {
+        font-size: 38px;
+        margin: 15px 0;
+    }
+
+    .slide-content p {
+        font-size: 15px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .slider-dots {
+        bottom: 20px;
+    }
+}
+
+/*TABLET*/
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-image img {
+        height: 450px;
+    }
+
+    .experience-box {
+        right: 20px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+
+    .stat-box:nth-child(2) {
+        border-right: none;
+    }
+}
+
+/*TABLET*/
+@media (max-width: 950px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 600px) {
+    .services-section {
+        padding: 70px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .service-card {
+        padding: 30px 25px;
+    }
+
+    .services-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 25px;
+        margin-top: 50px;
+    }
+
+    .services-cta h3 {
+        font-size: 21px;
+    }
+
+    .services-cta a {
+        width: 100%;
+        text-align: center;
+    }
+}

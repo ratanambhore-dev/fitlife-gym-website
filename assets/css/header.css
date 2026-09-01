@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505 !important;
+    color: #fff;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    background: #000;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.container {
+    max-width: 100%;
+    height: 80px;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+/*LOGO*/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 80px;
+    display: block;
+}
+
+/*NAVBAR*/
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #e50914;
+}
+
+/*JOIN BUTTON*/
+.join-btn {
+    background: #e50914;
+    color: #fff !important;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background: #ff1a25;
+    transform: translateY(-2px);
+}
+
+/*MOBILE MENU BUTTON*/
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*MOBILE MENU*/
+.menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: #111;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 20px;
+        /* Initially hidden */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        /* Smooth animation */
+        transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    /* When menu is opened */
+    .navbar.show {
+        max-height: 550px;
+        opacity: 1;
+        transform: translateY(0);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+        transition: 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #e50914;
+        padding-left: 22px;
+    }
+
+    /* Join button */
+    .navbar .join-btn {
+        margin-top: 10px;
+        text-align: center;
+        background: #e50914;
+        border-bottom: none;
+        padding: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

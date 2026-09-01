@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Payment | FITLIFE GYM</title>
+    <link rel="stylesheet"href="assets/css/header.css">
+    <link rel="stylesheet"href="assets/css/payment.css">
+    <link rel="stylesheet"href="assets/css/footer.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- PAYMENT HERO -->
+    <section class="payment-hero">
+        <div>
+            <span>FITLIFE GYM</span>
+            <h1>
+                COMPLETE YOUR
+                <strong>MEMBERSHIP</strong>
+            </h1>
+            <p>
+                Choose your payment method and complete
+                your FITLIFE membership.
+            </p>
+        </div>
+    </section>
+
+    <!-- PAYMENT SECTION -->
+    <section class="payment-section">
+        <div class="payment-container">
+            <!-- PLAN DETAILS -->
+            <div class="selected-plan">
+                <span>SELECTED PLAN</span>
+                <h2 id="planName">
+                    Basic Membership
+                </h2>
+                <div class="payment-price">
+                    ₹<span id="planPrice">
+                        999
+                    </span>
+                    <small>/ Month</small>
+                </div>
+
+                <div class="plan-features">
+                    <p>✓ Gym Access</p>
+                    <p>✓ Cardio Equipment</p>
+                    <p>✓ Strength Equipment</p>
+                    <p>✓ Locker Facility</p>
+                </div>
+            </div>
+
+            <!-- PAYMENT FORM -->
+            <div class="payment-box">
+                <h2>
+                    PAYMENT DETAILS
+                </h2>
+                <p>
+                    Enter your details to continue.
+                </p>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label>
+                            Full Name
+                        </label>
+                        <input type="text"id="name"placeholder="Enter your name"required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Email Address
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Phone Number
+                        </label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone"
+                            required
+                        >
+                    </div>
+
+                    <h3>
+                        Select Payment Method
+                    </h3>
+                    <div class="payment-methods">
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="UPI"
+                                required
+                            >
+                            <span>
+                                UPI
+                            </span>
+                        </label>
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="Card"
+                            >
+                            <span>
+                                Debit / Credit Card
+                            </span>
+                        </label>
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="Net Banking"
+                            >
+                            <span>
+                                Net Banking
+                            </span>
+                        </label>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="pay-button"
+                    >
+                        PAY ₹<span id="payAmount">
+                            999
+                        </span>
+                    </button>
+                    <p
+                        id="paymentMessage"
+                        class="payment-message"
+                    ></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/payment.js"></script>
+</body>
+</html>

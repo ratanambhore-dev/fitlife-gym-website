@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join FITLIFE | Gym Membership</title>
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- Join CSS -->
+    <link rel="stylesheet" href="assets/css/join.css">
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- JOIN HERO -->
+    <section class="join-hero">
+        <div class="join-hero-content">
+            <span>START YOUR TRANSFORMATION</span>
+            <h1>
+                JOIN <strong>FITLIFE</strong>
+            </h1>
+            <p>
+                Take the first step towards a stronger,
+                healthier and more confident you.
+            </p>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP PLANS -->
+    <section class="plans-section">
+        <div class="plans-container">
+            <div class="section-heading">
+                <span>MEMBERSHIP PLANS</span>
+                <h2>
+                    CHOOSE YOUR <strong>PLAN</strong>
+                </h2>
+                <p>
+                    Select the membership that fits your
+                    fitness goals and lifestyle.
+                </p>
+            </div>
+
+            <div class="plans-grid">
+                <!-- BASIC -->
+                <div class="plan-card">
+                    <h3>Basic</h3>
+                    <div class="price">
+                        ₹999
+                        <span>/ Month</span>
+                    </div>
+                    <p class="plan-description">
+                        Perfect for beginners starting their
+                        fitness journey.
+                    </p>
+                    <ul>
+                        <li>✓ Gym Access</li>
+                        <li>✓ Cardio Equipment</li>
+                        <li>✓ Strength Equipment</li>
+                        <li>✓ Locker Facility</li>
+                        <li>✕ Personal Trainer</li>
+                    </ul>
+                    <a href="payment.html?plan=basic">
+                        Choose Basic
+                    </a>
+                </div>
+
+                <!-- STANDARD -->
+                <div class="plan-card popular">
+                    <div class="popular-label">
+                        MOST POPULAR
+                    </div>
+                    <h3>Standard</h3>
+                    <div class="price">
+                        ₹1499
+                        <span>/ Month</span>
+                    </div>
+                    <p class="plan-description">
+                        A complete option for regular
+                        fitness training.
+                    </p>
+                    <ul>
+                        <li>✓ Full Gym Access</li>
+                        <li>✓ Cardio Equipment</li>
+                        <li>✓ Strength Equipment</li>
+                        <li>✓ Basic Trainer Guidance</li>
+                        <li>✓ Fitness Assessment</li>
+                    </ul>
+                    <a href="payment.html?plan=standard">
+                        Choose Standard
+                    </a>
+                </div>
+
+                <!-- PREMIUM -->
+                <div class="plan-card">
+                    <h3>Premium</h3>
+                    <div class="price">
+                        ₹2499
+                        <span>/ Month</span>
+                    </div>
+                    <p class="plan-description">
+                        For members who want personalized
+                        training and guidance.
+                    </p>
+                    <ul>
+                        <li>✓ Full Gym Access</li>
+                        <li>✓ Personal Training</li>
+                        <li>✓ Customized Workout</li>
+                        <li>✓ Progress Tracking</li>
+                        <li>✓ Fitness Guidance</li>
+                    </ul>
+                    <a href="payment.html?plan=premium">
+                        Choose Premium
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--JOIN FORM-->
+    <section class="join-form-section" id="join-form">
+        <div class="join-form-container">
+            <!-- LEFT CONTENT -->
+            <div class="join-form-info">
+                <span>READY TO START?</span>
+                <h2>
+                    LET'S BUILD YOUR
+                    <strong>BEST VERSION.</strong>
+                </h2>
+                <p>
+                    Fill out the form and our team will contact
+                    you with membership details and help you
+                    choose the right plan.
+                </p>
+                <div class="join-benefit">
+                    <div>✓</div>
+                    <p>
+                        Modern gym equipment
+                    </p>
+                </div>
+
+                <div class="join-benefit">
+                    <div>✓</div>
+                    <p>
+                        Professional trainer guidance
+                    </p>
+                </div>
+
+                <div class="join-benefit">
+                    <div>✓</div>
+                    <p>
+                        Flexible membership plans
+                    </p>
+                </div>
+
+                <div class="join-benefit">
+                    <div>✓</div>
+                    <p>
+                        Friendly fitness environment
+                    </p>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <div class="join-form-box">
+                <h2>
+                    MEMBERSHIP ENQUIRY
+                </h2>
+                <p>
+                    Enter your details below.
+                </p>
+                <form id="joinForm">
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="joinName">
+                            Full Name
+                        </label>
+                        <input
+                            type="text"
+                            id="joinName"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="joinEmail">
+                            Email Address
+                        </label>
+                        <input
+                            type="email"
+                            id="joinEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="joinPhone">
+                            Phone Number
+                        </label>
+                        <input
+                            type="tel"
+                            id="joinPhone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+
+                    <!-- Plan -->
+                    <div class="form-group">
+                        <label for="plan">
+                            Select Membership
+                        </label>
+                        <select
+                            id="plan"
+                            name="plan"
+                            required
+                        >
+                            <option value="">
+                                Select a plan
+                            </option>
+                            <option value="Basic">
+                                Basic - ₹999 / Month
+                            </option>
+                            <option value="Standard">
+                                Standard - ₹1499 / Month
+                            </option>
+                            <option value="Premium">
+                                Premium - ₹2499 / Month
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- Goal -->
+                    <div class="form-group">
+                        <label for="goal">
+                            Fitness Goal
+                        </label>
+                        <select
+                            id="goal"
+                            name="goal"
+                            required
+                        >
+                            <option value="">
+                                Select your goal
+                            </option>
+                            <option value="Weight Loss">
+                                Weight Loss
+                            </option>
+                            <option value="Muscle Building">
+                                Muscle Building
+                            </option>
+                            <option value="Strength">
+                                Strength Training
+                            </option>
+                            <option value="General Fitness">
+                                General Fitness
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="joinMessage">
+                            Message
+                        </label>
+                        <textarea
+                            id="joinMessage"
+                            name="message"
+                            rows="4"
+                            placeholder="Tell us about your fitness goal..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit"class="join-submit">SUBMIT ENQUIRY</button>
+                    <p
+                        id="joinMessageStatus"
+                        class="join-message"
+                    ></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="join-cta">
+        <div>
+            <span>YOUR JOURNEY STARTS NOW</span>
+            <h2>
+                DON'T WAIT.
+                <strong>START TODAY.</strong>
+            </h2>
+        </div>
+        <a href="contact.html">
+            CONTACT US
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/join.js"></script>
+
+</body>
+</html>
