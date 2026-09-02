@@ -50,14 +50,17 @@ body {
         width: 40px;
         height: 40px;
         font-size: 20px;
+        display: none !important;
     }
 
     .prev {
         left: 10px;
+        display: none !important;
     }
 
     .next {
         right: 10px;
+        display: none !important;
     }
 
     .slider-dots {
